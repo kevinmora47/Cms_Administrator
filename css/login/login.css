@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 100%;
+}
+
+.header-two {
+    font-size: 4rem;
+    margin-top: 15px;
+}
+
+hr{
+    margin-bottom: 10px;
+    height: 2px;
+    border: none;
+    background-color: #188a79;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ecf6f5;
+}
+
+.hero-image {
+    width: 100%;
+    height: 60%;
+}
+
+.singIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    width: 100%;
+    min-height: calc(100vh - 200px);
+}
+
+.singIn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    min-width: 320px;
+    padding: 20px;
+}
+
+.singIn-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.label {
+    margin: 5px 0 2px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.input {
+    border: 2px solid #559e93;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+::placeholder{
+
+font-weight: 700;
+}
+
+
+.button{
+width: 30%;
+min-width: 100px; 
+margin: 20px 0;
+padding: 15px;
+background-color: #559e93;
+border:  #1d6e62 2px solid;
+color: white;
+font-weight: 700;
+border-radius: 5px;
+}
