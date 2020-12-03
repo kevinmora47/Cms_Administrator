@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #443d9d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 6.25%;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background-color: var(--primary-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.nav-icon {
+    width: 45px;
+    margin-right: 10px;
+    border-radius: 45px;
+}
+
+.nav-item {
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    background-color: #f1e9e933;
+}
+
+.nav-link {
+    font-size: 12rem;
+    font-weight: 600;
+    color: #aaaaaa;
+    opacity: 0.9;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-social-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.nav-item-img {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 10px;    
+}
+
+.nav-social-icon-config {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/img/icon-one.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-social-icon-document {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/img/icon-two.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-social-icon-bell {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/img/icon-three.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-social-icon-mail {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/img/icon-four.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-social-icon-profile {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/img/profile-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.no-bkg {
+    background-color: transparent;
+}
