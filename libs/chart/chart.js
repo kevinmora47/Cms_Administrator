@@ -1,6 +1,6 @@
    
         var chart = new Chartist.Line('.ct-chart', {
-          labels: ['M', 'K','W','T','F'],
+          labels: ['Monday', 'Tuesday','Wednesday','Tuesday','Friday'],
           series: [
             [1, 5, 2, 5, 4, 3],
             [2, 3, 4, 8, 1, 2],
