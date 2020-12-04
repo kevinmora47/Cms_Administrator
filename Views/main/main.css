@@ -17,9 +17,9 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    height: 75px;
+    height: 75rem;
     background-color: var(--primary-color);
 }
 
@@ -31,20 +31,21 @@ body {
 
 .nav-container {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 100%;    
+    height: 100%;
 }
 
 .nav-icon {
-    width: 45px;    
-    border-radius: 45px;
-    margin-left: 50px;
+    width: 45rem;
+    border-radius: 45rem;
+    margin-left: 50rem;
 }
 
 .nav-item {
-    margin: 0 15px;
-    padding: 10px;
-    border-radius: 10px;
+    margin: 0 15rem;
+    padding: 10rem;
+    border-radius: 10rem;
 }
 
 .nav-item:hover {
@@ -66,19 +67,19 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    margin-right: 50px;
+    margin-right: 50rem;
 }
 
 .nav-item-img {
-    margin: 0 5px;
-    padding: 10px;
-    border-radius: 10px;
+    margin: 0 5rem;
+    padding: 10rem;
+    border-radius: 10rem;
 }
 
 .nav-social-icon-config {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 25rem;
+    height: 25rem;
     background-image: url('../../assets/img/icon-one.svg');
     background-size: cover;
     background-position: center;
@@ -87,8 +88,8 @@ body {
 
 .nav-social-icon-document {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 25rem;
+    height: 25rem;
     background-image: url('../../assets/img/icon-two.svg');
     background-size: cover;
     background-position: center;
@@ -97,8 +98,8 @@ body {
 
 .nav-social-icon-bell {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 25rem;
+    height: 25rem;
     background-image: url('../../assets/img/icon-three.svg');
     background-size: cover;
     background-position: center;
@@ -107,8 +108,8 @@ body {
 
 .nav-social-icon-mail {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 25rem;
+    height: 25rem;
     background-image: url('../../assets/img/icon-four.svg');
     background-size: cover;
     background-position: center;
@@ -117,13 +118,13 @@ body {
 
 .nav-social-icon-profile {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 25rem;
+    height: 25rem;
     background-image: url('../../assets/img/profile-pic.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50px;
+    border-radius: 50rem;
 }
 
 .no-bkg {
@@ -136,7 +137,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 15rem;
     background-color: #b2b6c51c;
 }
 
@@ -146,7 +147,7 @@ body {
     width: 100%;
     height: 85vh;
     background-color: #b2b6c51c;
-    border-radius: 20px;
+    border-radius: 20rem;
 }
 
 .aside {
@@ -154,11 +155,11 @@ body {
     align-items: center;
     height: auto;
     min-width: 5%;
-    margin-left: 20px;
+    margin-left: 20rem;
     padding: 15px 0;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: -4px 3px 5px 1px rgba(0, 0, 0, 0.28);
+    border-radius: 20rem;
+    box-shadow: -4rem 3rem 5rem 1rem rgba(0, 0, 0, 0.28);
 }
 
 .aside-control {
@@ -171,9 +172,9 @@ body {
 }
 
 .aside-control-item {
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 50px;
+    margin: 10rem 0;
+    padding: 15rem;
+    border-radius: 50rem;
 }
 
 .aside-control-item:hover {
@@ -182,8 +183,8 @@ body {
 
 .user {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 35rem;
+    height: 35rem;
     background-image: url('../../assets/img/user-icon.svg');
     background-size: cover;
     background-position: center;
@@ -192,8 +193,8 @@ body {
 
 .doc {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 35rem;
+    height: 35rem;
     background-image: url('../../assets/img/doc-icon.svg');
     background-size: cover;
     background-position: center;
@@ -202,8 +203,8 @@ body {
 
 .mail {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 35rem;
+    height: 35rem;
     background-image: url('../../assets/img/mail-icon.svg');
     background-size: cover;
     background-position: center;
@@ -215,48 +216,54 @@ body {
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 400px;
-    padding: 25px;
+    height: 400rem;
+    padding: 25rem;
 }
 
 .chart-graphic {
     width: 100%;
     height: inherit;
-    padding: 25px;
-    border-radius: 25px;
+    padding: 25rem;
+    border-radius: 25rem;
     background-color: white;
 }
 
+.users {
+    display: flex;
+    width: 100%;
+}
+
 /* Tablet */
+
 @media only screen and (max-width: 950px) {
-    .wrapper{
+    .wrapper {
         padding: 0;
     }
-    .nav-container{
+    .nav-container {
         display: none;
     }
-    .nav{
+    .nav {
         justify-content: center;
         align-items: center;
     }
-    .nav-item-img{
-        margin: 0 3px;
+    .nav-item-img {
+        margin: 0 3rem;
     }
-    .main{
+    .main {
         flex-direction: column;
     }
-    .chart{
+    .chart {
         width: 100%;
-        padding: 5px;
-        height: 200px;
+        padding: 5rem;
+        height: 200rem;
     }
-    .aside{
+    .aside {
         width: auto;
-        margin: 10px;
+        margin: 10rem;
         padding: 0;
         height: 10%;
     }
-    .aside-control{        
+    .aside-control {
         flex-direction: row;
     }
 }
