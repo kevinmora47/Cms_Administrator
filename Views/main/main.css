@@ -16,6 +16,11 @@ body {
     background-color: #b2b6c51c;
 }
 
+.icon {
+    border-radius: 0;
+    width: 50px;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -34,7 +39,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 100%;    
+    height: 100%;
 }
 
 .nav-icon {
@@ -137,27 +142,27 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
 
 .main {
     display: flex;
-    align-items: center;    
+    align-items: center;
     width: 100%;
-    height: 89vh;
-    background-color: #b2b6c51c;    
+    height: 90vh;
+    background-color: #b2b6c51c;
 }
 
 .aside {
     display: flex;
     align-items: center;
     height: auto;
-    min-width: 5%;
+    min-width: 3%;
     margin-left: 20rem;
     padding: 15px 0;
     background-color: white;
     border-radius: 20rem;
-    box-shadow: -4rem 3rem 5rem 1rem rgba(0, 0, 0, 0.28);    
+    box-shadow: -4rem 3rem 5rem 1rem rgba(0, 0, 0, 0.28);
 }
 
 .aside-control {
@@ -166,7 +171,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;    
+    height: auto;
 }
 
 .aside-control-item {
@@ -217,13 +222,13 @@ body {
     height: 100%;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
-    padding: 0 15rem;
-    border: blue 1px solid;
+    height: 91vh;
+    padding: 15rem 15rem;
+    /* border: blue 1px solid; */
 }
 
 .chart-graphic {
@@ -232,34 +237,100 @@ body {
     padding: 25rem;
     border-radius: 25rem;
     background-color: white;
-    
 }
 
 .users {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    height: 30%;
-    margin: 15px 0;
-    border-radius: 25rem;    
-    border: red 1px solid;
-
+    width: 60%;
+    height: 25%;
+    margin: 15rem 0;
+    border-radius: 25rem;
+    /* border: red 1px solid; */
 }
 
-.user-card{
-    width: 15%;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    border-radius: 25rem;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 70%;
+    margin: 5rem 0;
+}
+
+.card-title {
+    color: #a9a9aa;
+    font-size: 12rem;
+}
+
+.user-card {
+    min-width: 22%;
     height: 70%;
     border-radius: 25rem;
     background-color: white;
-    border: green 1px solid;
+    /* border: green 1px solid; */
+}
+
+.card-role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    padding: 3px;
+    font-size: 10rem;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.card-role--orange {
+    color: #592b00;
+    background-color: #ffc48c;
+}
+
+.card-role--yellow {
+    background-color: #ffe799;
+    color: #593d00;
+}
+
+.card-role--green {
+    background-color: #d4edda90;
+    color: #593d00;
+}
+
+.card-role--blue {
+    background-color: #cbe5fe;
+    color: #593d00;
+}
+
+.card-user {
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    background-image: url('../../assets/img/cat-user.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Tablet */
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 930px) {
     .wrapper {
         padding: 0;
+    }
+    .content {
+        padding: 0 15rem;
     }
     .nav-container {
         display: none;
@@ -277,16 +348,43 @@ body {
     .chart {
         align-items: center;
         justify-content: center;
-        width: 100%;        
+        width: 100%;
         height: 200rem;
     }
     .aside {
         width: auto;
         margin: 10rem;
         padding: 0;
-        height: 15%;
+        height: 8%;
     }
     .aside-control {
         flex-direction: row;
+    }
+    .users {
+        width: 100%;
+        height: 20%;
+    }
+    .card {
+        height: 100%;
+    }
+    .hide-card {
+        display: none;
+    }
+    .user-card {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .user-card {
+        width: 100%;
+        height: 100%;
+    }
+    .hide-card-mobile {
+        display: none;
+    }
+    .users {
+        width: 100%;
+        height: 20%;
     }
 }
