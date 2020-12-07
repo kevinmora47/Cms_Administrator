@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" type="image/svg" href="../../assets/img/Favicon.svg" />
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,11 +24,11 @@
             <img class="nav-icon" src="../../assets/img/icon.svg" />
             <ul class="nav-container">
                 <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Billing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Header</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Exchange</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Footer</a></li>
             </ul>
             <ul class="nav-social-container">
                 <li class="nav-social-item nav-item-img"><a class="nav-social-icon-config" href=""></a></li>
@@ -50,6 +51,9 @@
             </aside>
 
             <div class="content">
+                <h6 class="card-title xl">
+                    Users
+                </h6>
                 <div class="users">
                     <div class="user-card">
                         <div class="card">
@@ -96,13 +100,40 @@
                         </div>
                     </div>
                 </div>
-
+                <h6 class="card-title xl">
+                    Graphic
+                </h6>
                 <section class="chart">
                     <div class="ct-chart chart-graphic"></div>
                 </section>
             </div>
             <section class="profile">
-                
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <img class="profile-header-pricture" src="../../assets/img/profile-header-pic.jpg" alt="">
+                        <h6 class="profile-title">
+                            Kevin Mora Vásquez
+                        </h6>
+                        <div class="card-role card-role--green xs">Frontend</div>
+                    </div>
+                    <hr>
+                    <div class="profile-performance">
+                        <h3 class="profile-title center">Coworker Performace</h3>
+                        <div class="performance">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="analytics-performance">
+                        <h3 class="profile-title center">Coworker Performace</h3>
+                        <div class="analytics">
+                            <div class="analytics-commits card-role commits"> <span class="commit"></span> Commits: 90
+                            </div>
+                            <div class="analytics-merges card-role merges"><span class="merge"></span>Merges: 45</div>
+                            <div class="analytics-pushes card-role pushes"><span class="push"></span>Pushes: 20</div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </main>
     </div>
