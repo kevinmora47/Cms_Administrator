@@ -55,7 +55,7 @@ body {
 }
 
 .nav-item:hover {
-    background-color: #f2f9ff;
+    background-color:#aaaaaa5c;
 }
 
 .nav-link {
@@ -142,14 +142,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 88vh;
 }
 
 .main {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 87vh;
     background-color: #f2f9ff;
 }
 
@@ -176,12 +176,12 @@ body {
 
 .aside-control-item {
     margin: 10rem 0;
-    padding: 15rem;
+    padding: 5rem;
     border-radius: 50rem;
 }
 
 .aside-control-item:hover {
-    background-color: #f2f9ff;
+    background-color: #aaaaaa5c;
 }
 
 .user {
@@ -228,7 +228,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 15rem 15rem;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
 }
 
 .chart-graphic {
@@ -274,6 +274,10 @@ body {
     font-size: 12rem;
 }
 
+.xl{
+    font-size: 28rem;
+}
+
 .user-card {
     min-width: 22%;
     height: 70%;
@@ -288,6 +292,7 @@ body {
     align-items: center;
     min-width: 40%;
     padding: 3px;
+    margin-bottom: 10px;
     font-size: 10rem;
     font-weight: 700;
     border-radius: 4px;
@@ -323,40 +328,141 @@ body {
     background-repeat: no-repeat;
 }
 
-.profile{
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 30%;
+    padding-top: 40rem;    
     background-color: #f2f9ff;
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 
+.profile-container {
+    position: relative;
+    display: flex;        
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 95%;
+    height: 95%;
+    border-radius: 25rem;
+    background-color: white;
+    /* border: 1px green dashed; */
+}
 
+.profile-header {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    padding: 5rem;
+    width: 75%;
+    height: 15%;
+    margin-top: 15rem;
+    box-shadow: -4rem 3rem 5rem 1rem rgba(0, 0, 0, 0.20);
+    border-radius: 25rem;        
+}
 
+.profile-header-pricture {
+    width: 55rem;
+    height: 55rem;
+    border-radius: 50rem;
+}
 
+.xs{
+    margin-top: 10rem;
+    width: auto;
+}
 
+.profile-title {
+    color: #a9a9aa;
+    font-size: 14rem;
+}
 
+hr{
+    background-color:#443d9d ;
+    margin: 20rem 0;
+    width: 100%;
+}
 
+.profile-performance{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 40%;
+    /* border: 1px var(--primary-color) dashed; */
+}
 
+.performance{
+    height: 90%;
+    width: 90%;
+}
 
+.analytics-performance{
+    width: 90%;
+    height: 30%;
+    /* border: 1px deeppink dashed; */
+    /* margin-bottom: 15rem; */
+}
 
+.analytics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 
+.merges{
+    background-color: #ef5b4f;    
+}
 
+.commits{
+    background-color: #59922b;
+}
 
+.pushes{
+    background-color: #3b68cf;
+}
 
+.commit{
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    background-image: url('../../assets/img/commit.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.merge{
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    background-image: url('../../assets/img/merge.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-
-
-
-
-
-
-
+.push{
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    background-image: url('../../assets/img/push.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* Tablet */
 
 @media only screen and (max-width: 930px) {
     .wrapper {
-        padding: 0;
+        padding: 0;        
     }
     .content {
         padding: 0 15rem;
@@ -391,7 +497,7 @@ body {
     }
     .users {
         width: 100%;
-        height: 20%;
+        height: 40%;
     }
     .card {
         height: 100%;
@@ -402,9 +508,15 @@ body {
     .user-card {
         width: 30%;
     }
+    .profile {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    .wrapper{
+        justify-content: space-around;
+    }
     .user-card {
         width: 40%;
         height: 100%;
@@ -413,24 +525,30 @@ body {
         display: none;
     }
     .users {
+        width: 60%;
+        height: 30%;
+    }
+    .profile {
         width: 100%;
-        height: 20%;
+    }
+    .profile-container {
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 500px) {
-
-    .card-role-hide{
+    .card-role-hide {
         display: none;
     }
-
-    .user-card{
+    .user-card {
         width: 100%;
         height: 70%;
     }
-
-    .users{
+    .users {
         margin: 5px;
     }
-
+    .content {
+        justify-content: center;
+        align-items: center;
+    }
 }
