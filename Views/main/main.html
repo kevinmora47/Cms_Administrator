@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
     <link rel="icon" type="image/svg" href="../../assets/img/Favicon.svg" />
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,11 +28,11 @@
             <img class="nav-icon" src="../../assets/img/icon.svg" />
             <ul class="nav-container">
                 <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Header</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Exchange</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Plans</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Footer</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="headerButton">Header</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="exchangeButton">Exchange</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="productButton">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="plansButton">Plans</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="footerButton">Footer</a></li>
             </ul>
             <ul class="nav-social-container">
                 <li class="nav-social-item nav-item-img"><a class="nav-social-icon-config" href=""></a></li>
@@ -103,8 +107,10 @@
                 <h6 class="card-title xl">
                     Graphic
                 </h6>
+                <!-- Changing containers -->
                 <section class="chart">
-                    <div class="ct-chart chart-graphic"></div>
+                    <!-- <div id="header-form" class="header-form"></div> -->
+                    <div id="chart" class="ct-chart chart-graphic"></div>                    
                 </section>
             </div>
             <section class="profile">
@@ -139,5 +145,6 @@
     </div>
 </body>
 <script src="../../libs/chart/chart.js"></script>
+<script src="../../contollers/main/main.js"></script>
 
 </html>
