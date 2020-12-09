@@ -17,3 +17,10 @@ function showHeaderButton() {
   $("#header-title").text("Editing Header");
   $("#btn-header").addClass("button");
 }
+
+async function chargeHeader() {
+  let response = await fetch("https://localhost:5001/api/Banner");
+  let data = await response.json();
+  document.getElementById("input").value = data[0].header;
+  console.log(data[0].header);
+}
