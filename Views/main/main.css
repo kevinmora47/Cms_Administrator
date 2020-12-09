@@ -347,7 +347,7 @@ body {
   align-items: center;
   /* justify-content: center; */
   width: 95%;
-  height: 95%;
+  height: 100%;
   border-radius: 25rem;
   background-color: white;
   /* border: 1px green dashed; */
@@ -575,6 +575,10 @@ input[type="text"] {
   .profile {
     width: 100%;
   }
+  .analytics{
+    height: 100%;
+    padding-bottom: 20rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -598,6 +602,10 @@ input[type="text"] {
   .profile-container {
     width: 90%;
   }
+  .analytics{
+    height: 100%;
+    padding-bottom: 20rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -614,5 +622,9 @@ input[type="text"] {
   .content {
     justify-content: center;
     align-items: center;
+  }
+  .analytics{
+    height: 100%;
+    padding-bottom: 20rem;
   }
 }
