@@ -6,5 +6,6 @@ function get() {
     }).then(function (MyJson) {
         console.log(MyJson);
     });
+
 }
 
