@@ -1,9 +1,16 @@
-$(document).ready(function () {
-  $("#headerButton").click(function () {
-    showHeaderButton();
-    chargeHeader();
-  });
-});
+// Start of the clicks events.
+document.getElementById("headerButton").onclick = function (e) {
+  showHeaderButton();
+  chargeHeader();
+  console.log(chargeHeader());
+}
+
+document.getElementById("btn-header").onclick = function (e) {
+  editHeader();
+}
+
+
+// End of the clicks events.
 
 function showHeaderButton() {
   $("#chart").addClass("hide");
@@ -22,5 +29,21 @@ async function chargeHeader() {
   let response = await fetch("https://localhost:5001/api/Banner");
   let data = await response.json();
   document.getElementById("input").value = data[0].header;
-  console.log(data[0].header);
+  document.getElementById("id-banner").value = data[0].idBanner;
+}
+
+async function editHeader() {
+
+  fetch("https://localhost:5001/api/Banner", {
+    method: "PUT",
+    body: JSON.stringify({
+      idBanner:document.getElementById("id-banner").value,
+      header: document.getElementById("input").value
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  }).then(response => response.json())
+    .then(json => console.log(json));
+
 }
