@@ -380,7 +380,12 @@ body {
   color: #a9a9aa;
   font-size: 14rem;
 }
-
+.top-space{
+  margin-top: 30rem;
+}
+.bottom-space{
+  margin-bottom: 30rem;
+}
 hr {
   background-color: #443d9d;
   margin: 20rem 0;
@@ -467,7 +472,7 @@ hr {
 .activate-header-form {
   width: 100%;
   height: 100%;
-  padding: 25rem;
+  padding: 40rem;
   border-radius: 25rem;
   background-color: white;
 }
@@ -481,7 +486,8 @@ hr {
 .header-form-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   /* border: 1px solid salmon; */
@@ -489,7 +495,7 @@ hr {
 
 .input {
   display: inline-block;
-  width: 15%;
+  width: 70%;
   height: 10%;
   margin-left: 10rem;
   font-size: 14rem;

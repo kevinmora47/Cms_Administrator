@@ -16,11 +16,15 @@ function showHeaderButton() {
   $("#header-form").addClass("activate-header-form");
   $("#header-form-title").addClass("card-title xl");
   $("#header-form").addClass("activate-header-form");
-  $("#lbl-name-header").addClass("profile-title");
+  $("#lbl-name-header").addClass("profile-title top-space");
   $("#header-form").addClass("header-form");
   $("#header-form-container").addClass("header-form-container");
-  $("#input").addClass("input");
   $("#header-title").text("Editing Header");
+  $("#input").addClass("input");
+  $("#lbl-sub-title").addClass("profile-title");
+  $("#sub-title-input").addClass("input")
+  $("#lbl-button-title").addClass("profile-title");
+  $("#button-input").addClass("input")
   $("#btn-header").addClass("button");
 }
 
