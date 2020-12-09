@@ -2,7 +2,6 @@
 document.getElementById("headerButton").onclick = function (e) {
   showHeaderButton();
   chargeHeader();
-  console.log(chargeHeader());
 }
 
 document.getElementById("btn-header").onclick = function (e) {
@@ -37,13 +36,21 @@ async function editHeader() {
   fetch("https://localhost:5001/api/Banner", {
     method: "PUT",
     body: JSON.stringify({
-      idBanner:document.getElementById("id-banner").value,
+      idBanner: document.getElementById("id-banner").value,
       header: document.getElementById("input").value
     }),
     headers: {
       "Content-type": "application/json; charset=UTF-8"
     }
-  }).then(response => response.json())
+  }).then(
+    Swal.fire({
+      width: '30%',
+      height: '50%',
+      icon: 'success',
+      title: 'Your work has been saved',
+      showConfirmButton: false,
+      timer: 2000
+    }))
     .then(json => console.log(json));
 
 }
