@@ -1,150 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="image/svg" href="../../assets/img/Favicon.svg" />
-    <link rel="stylesheet" href="./main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="nav">
-            <img class="nav-icon" src="../../assets/img/icon.svg" />
-            <ul class="nav-container">
-                <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="headerButton">Header</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="exchangeButton">Exchange</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="productButton">Product</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="plansButton">Plans</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="footerButton">Footer</a></li>
-            </ul>
-            <ul class="nav-social-container">
-                <li class="nav-social-item nav-item-img"><a class="nav-social-icon-config" href=""></a></li>
-                <li class="nav-social-item nav-item-img"><a class="nav-social-icon-document" href=""></a></li>
-                <li class="nav-social-item nav-item-img"><a class="nav-social-icon-bell" href=""></a></li>
-                <li class="nav-social-item nav-item-img"><a class="nav-social-icon-mail" href=""></a></li>
-                <li class="nav-social-item nav-item-img no-bkg"><a class="nav-social-icon-profile" href=""></a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <img class="nav-icon" src="../../assets/img/icon.svg" />
+        <ul class="nav-container">
+          <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="headerButton">Header</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="exchangeButton">Exchange</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="productButton">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="plansButton">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="footerButton">Footer</a>
+          </li>
+        </ul>
+        <ul class="nav-social-container">
+          <li class="nav-social-item nav-item-img">
+            <a class="nav-social-icon-config" href=""></a>
+          </li>
+          <li class="nav-social-item nav-item-img">
+            <a class="nav-social-icon-document" href=""></a>
+          </li>
+          <li class="nav-social-item nav-item-img">
+            <a class="nav-social-icon-bell" href=""></a>
+          </li>
+          <li class="nav-social-item nav-item-img">
+            <a class="nav-social-icon-mail" href=""></a>
+          </li>
+          <li class="nav-social-item nav-item-img no-bkg">
+            <a class="nav-social-icon-profile" href=""></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div class="wrapper">
-        <main class="main">
+      <main class="main">
+        <aside class="aside">
+          <ul class="aside-control">
+            <li class="aside-control-item">
+              <a class="aside-control-link user" href=""></a>
+            </li>
+            <li class="aside-control-item">
+              <a class="aside-control-link doc" href=""></a>
+            </li>
+            <li class="aside-control-item">
+              <a class="aside-control-link mail" href=""></a>
+            </li>
+          </ul>
+        </aside>
 
-            <aside class="aside">
-                <ul class="aside-control">
-                    <li class="aside-control-item"><a class="aside-control-link user" href=""></a></li>
-                    <li class="aside-control-item"><a class="aside-control-link doc" href=""></a></li>
-                    <li class="aside-control-item"><a class="aside-control-link mail" href=""></a></li>
-                </ul>
-            </aside>
-
-            <div class="content">
-                <h6 class="card-title xl">
-                    Users
-                </h6>
-                <div class="users">
-                    <div class="user-card">
-                        <div class="card">
-                            <div class="card-container">
-                                <h6 class="card-title">
-                                    Kevin Mora V.
-                                </h6>
-                                <img class="card-user icon" src="../../assets/img/cat-user.svg" />
-                            </div>
-                            <div class="card-role card-role--yellow">Restricted</div>
-                        </div>
-                    </div>
-                    <div class="user-card hide-card-mobile">
-                        <div class="card">
-                            <div class="card-container">
-                                <h6 class="card-title">
-                                    Kevin Mora V.
-                                </h6>
-                                <img class="card-user icon" src="../../assets/img/cat-user.svg" />
-                            </div>
-                            <div class="card-role card-role--green">Administrator</div>
-                        </div>
-                    </div>
-                    <div class="user-card card-role-hide">
-                        <div class="card">
-                            <div class="card-container">
-                                <h6 class="card-title">
-                                    Kevin Mora V.
-                                </h6>
-                                <img class="card-user icon" src="../../assets/img/cat-user.svg" />
-                            </div>
-                            <div class="card-role card-role--orange">Read Only</div>
-                        </div>
-                    </div>
-                    <div class="user-card hide-card">
-                        <div class="card">
-                            <div class="card-container">
-                                <h6 class="card-title">
-                                    Kevin Mora V.
-                                </h6>
-                                <img class="card-user icon" src="../../assets/img/cat-user.svg" />
-                            </div>
-                            <div class="card-role card-role--blue">New</div>
-                        </div>
-                    </div>
+        <div class="content">
+          <h6 class="card-title xl">Users</h6>
+          <div class="users">
+            <div class="user-card">
+              <div class="card">
+                <div class="card-container">
+                  <h6 class="card-title">Kevin Mora V.</h6>
+                  <img
+                    class="card-user icon"
+                    src="../../assets/img/cat-user.svg"
+                  />
                 </div>
-                <h6 class="card-title xl">
-                    Graphic
-                </h6>
-                <!-- Changing containers -->
-                <section class="chart">
-                    <!-- <div id="header-form" class="header-form"></div> -->
-                    <div id="chart" class="ct-chart chart-graphic"></div>                    
-                </section>
+                <div class="card-role card-role--yellow">Restricted</div>
+              </div>
             </div>
-            <section class="profile">
-                <div class="profile-container">
-                    <div class="profile-header">
-                        <img class="profile-header-pricture" src="../../assets/img/profile-header-pic.jpg" alt="">
-                        <h6 class="profile-title">
-                            Kevin Mora Vásquez
-                        </h6>
-                        <div class="card-role card-role--green xs">Frontend</div>
-                    </div>
-                    <hr>
-                    <div class="profile-performance">
-                        <h3 class="profile-title center">Coworker Performace</h3>
-                        <div class="performance">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="analytics-performance">
-                        <h3 class="profile-title center">Coworker Performace</h3>
-                        <div class="analytics">
-                            <div class="analytics-commits card-role commits"> <span class="commit"></span> Commits: 90
-                            </div>
-                            <div class="analytics-merges card-role merges"><span class="merge"></span>Merges: 45</div>
-                            <div class="analytics-pushes card-role pushes"><span class="push"></span>Pushes: 20</div>
-                        </div>
-                    </div>
+            <div class="user-card hide-card-mobile">
+              <div class="card">
+                <div class="card-container">
+                  <h6 class="card-title">Kevin Mora V.</h6>
+                  <img
+                    class="card-user icon"
+                    src="../../assets/img/cat-user.svg"
+                  />
                 </div>
-
-            </section>
-        </main>
+                <div class="card-role card-role--green">Administrator</div>
+              </div>
+            </div>
+            <div class="user-card card-role-hide">
+              <div class="card">
+                <div class="card-container">
+                  <h6 class="card-title">Kevin Mora V.</h6>
+                  <img
+                    class="card-user icon"
+                    src="../../assets/img/cat-user.svg"
+                  />
+                </div>
+                <div class="card-role card-role--orange">Read Only</div>
+              </div>
+            </div>
+            <div class="user-card hide-card">
+              <div class="card">
+                <div class="card-container">
+                  <h6 class="card-title">Kevin Mora V.</h6>
+                  <img
+                    class="card-user icon"
+                    src="../../assets/img/cat-user.svg"
+                  />
+                </div>
+                <div class="card-role card-role--blue">New</div>
+              </div>
+            </div>
+          </div>
+          <h6 id="header-title" class="card-title xl">Graphic</h6>
+          <!-- Changing containers -->
+          <section class="chart">
+            <div id="chart" class="ct-chart chart-graphic"></div>
+            <div id="header-form">
+              <div class="header-form-title">
+                <p>Header Information</p>
+                <h6 id="header-form-title">Header</h6>
+              </div>
+              <div id="header-form-container">
+                <h6 id="lbl-name-header">Header Title:</h6>
+                <input class="hide" id="input" type="text" />
+                <button id="btn-header">Save</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="profile">
+          <div class="profile-container">
+            <div class="profile-header">
+              <img
+                class="profile-header-pricture"
+                src="../../assets/img/profile-header-pic.jpg"
+                alt=""
+              />
+              <h6 class="profile-title">Kevin Mora Vásquez</h6>
+              <div class="card-role card-role--green xs">Frontend</div>
+            </div>
+            <hr />
+            <div class="profile-performance">
+              <h3 class="profile-title center">Coworker Performace</h3>
+              <div class="performance"></div>
+            </div>
+            <hr />
+            <div class="analytics-performance">
+              <h3 class="profile-title center">Coworker Performace</h3>
+              <div class="analytics">
+                <div class="analytics-commits card-role commits">
+                  <span class="commit"></span> Commits: 90
+                </div>
+                <div class="analytics-merges card-role merges">
+                  <span class="merge"></span>Merges: 45
+                </div>
+                <div class="analytics-pushes card-role pushes">
+                  <span class="push"></span>Pushes: 20
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
-<script src="../../libs/chart/chart.js"></script>
-<script src="../../contollers/main/main.js"></script>
-
+  </body>
+  <script src="../../libs/chart/chart.js"></script>
+  <script src="../../contollers/main/main.js"></script>
 </html>
