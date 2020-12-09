@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#headerButton").click(function () {
     showHeaderButton();
-
+    chargeHeader();
   });
 });
 
@@ -16,8 +16,4 @@ function showHeaderButton() {
   $("#input").addClass("input");
   $("#header-title").text("Editing Header");
   $("#btn-header").addClass("button");
-}
-
-function chargeHeader(){
-  
 }
