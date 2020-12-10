@@ -37,7 +37,17 @@ async function editHeader() {
             title: 'Your work has been saved',
             showConfirmButton: false,
             timer: 2000
-        }))
+        })
+        
+        )
         .then(json => console.log(json));
+        cleanInputs();
+}
 
+
+function cleanInputs(){
+    document.getElementById("id-header").value = '';
+    document.getElementById("input").value = '';
+    document.getElementById("sub-title-input").value = '';
+    document.getElementById("button-input").value ='';
 }
