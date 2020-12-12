@@ -10,7 +10,6 @@ document.getElementById("exchangeButton").onclick = function (e) {
 
 function showHeaderPanel() {
   $("#chart").addClass("hide");
-  $("#header-form").addClass("hide");
   $("#header-form").addClass("activate-header-form");
   $("#header-form-title").addClass("card-title xl");
   $("#header-form").addClass("activate-header-form");
@@ -31,6 +30,6 @@ function showExchagePanel() {
   $("#chart").addClass("hide");
   $("#header-form").addClass("hide");
   $("#exchange-form").addClass("header-form-container");
-  $("#exchange-form").addClass("activatee-header-form");
+  $("#exchange-forms").addClass("activatee-header-form");
 
 }
